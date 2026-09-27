@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-geist: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-space-grotesk: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-space-mono: 'Space Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-geist);
+    color: #1a1b22;
+    background-color: #fbf8ff;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-headline-xl {
+  font-family: var(--font-space-grotesk);
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+@media (min-width: 768px) {
+  .font-headline-xl {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+
+.font-headline-lg {
+  font-family: var(--font-space-grotesk);
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 768px) {
+  .font-headline-lg {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.font-headline-md {
+  font-family: var(--font-space-grotesk);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.font-headline-sm {
+  font-family: var(--font-space-grotesk);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.font-label-lg {
+  font-family: var(--font-space-mono);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.font-label-md {
+  font-family: var(--font-space-mono);
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.font-label-sm {
+  font-family: var(--font-space-mono);
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.font-body-lg {
+  font-family: var(--font-geist);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+}
+
+.font-body-md {
+  font-family: var(--font-geist);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: var(--font-geist);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+
+/* Custom scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
