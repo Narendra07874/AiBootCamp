@@ -74,5 +74,27 @@ npm start
 
 ---
 
+## ⚡ Deploy to Vercel
+
+You can deploy this project to Vercel in 1 minute:
+
+### Option A: Via Vercel Web Dashboard (Recommended)
+1. Go to **[vercel.com/new](https://vercel.com/new)**.
+2. Select and import your GitHub repository: **`Narendra07874/AiBootCamp`**.
+3. Under **Environment Variables**, add:
+   - **Key**: `GEMINI_API_KEY`
+   - **Value**: Your Google Gemini API Key *(from [Google AI Studio](https://aistudio.google.com/))*
+4. Click **Deploy**!
+   - Vercel automatically builds the Vite frontend with `npm run build` and deploys the backend serverless endpoints from `/api`.
+
+### Option B: Via Vercel CLI
+```bash
+npm i -g vercel
+vercel
+```
+When prompted, select the default settings and set your `GEMINI_API_KEY` when prompted or in the dashboard.
+
+---
+
 ## 📄 License
 MIT License. Created for AI BootCamp.
